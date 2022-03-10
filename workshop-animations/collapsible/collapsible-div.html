@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collapsible div</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<input type="button" onclick="growDiv()" value="open div" id="more-button">
+<div id='grow'>
+    <div class='measuringWrapper'>
+        <div class="text">Bacon ipsum dolor amet rump landjaeger jerky, leberkas chislic beef shank. Swine meatball
+            strip steak pork chop, salami shankle t-bone ground round rump turkey. Cupim filet mignon fatback,
+            burgdoggen shoulder pork loin swine chuck brisket beef ribs shankle buffalo shank turducken. Andouille
+            ribeye landjaeger ham hock pork chop shank meatball chicken. Shankle doner andouille shank ball tip sirloin,
+            biltong porchetta capicola.
+        </div>
+    </div>
+</div>
+<script>
+    function growDiv() {
+        let growDiv = document.getElementById('grow');
+        if (growDiv.clientHeight) {
+            growDiv.style.height = '0';
+        } else {
+            let wrapper = document.querySelector('.measuringWrapper');
+            growDiv.style.height = wrapper.clientHeight + "px";
+        }
+        document.getElementById("more-button").value = document.getElementById("more-button").value === 'open div' ? 'close div' : 'open div';
+    }
+</script>
+
+</body>
+</html>

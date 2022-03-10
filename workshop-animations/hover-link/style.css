@@ -1,0 +1,16 @@
+.fancy-link {
+    text-decoration: none;
+    color: dodgerblue;
+    /* when using psudo. Remember to set position */
+    position: relative;
+}
+
+.fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+}

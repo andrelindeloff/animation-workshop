@@ -1,0 +1,3 @@
+# Image inflation
+
+Lag noe ala [denne](https://kstatic.googleusercontent.com/files/55283dea7e9b910cbb5556fe326165ba623c186ff87d9effe842ca583bc51408e61a109c26901c72045eaea09634cd6a1d8bf2d370e2ceb4320a4890324fd0bc)

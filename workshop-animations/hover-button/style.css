@@ -1,0 +1,39 @@
+.button {
+    cursor: pointer;
+    border: 0;
+    background: #ee6352;
+    color: white;
+    padding: 1em 1.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.button + .button {
+    margin-left: 1em;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.button-one::after {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.button-two::after {
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.button-three::after {
+    transform: scale(0);
+    transform-origin: bottom right;
+}

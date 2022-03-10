@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chevron button</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <a href="#">
+        <div id="demo" onclick="rotateMe()" class="chevron-container">
+            <svg id="demo" viewBox="0 0 24 24" fill="black" class="">
+                <g id="Property 1=expand_more_24px">
+                    <path id="icon/navigation/expand_more_24px" d="M16.59 8.29501L12 12.875L7.41 8.29501L6 9.70501L12 15.705L18 9.70501L16.59 8.29501Z" />
+                </g>
+            </svg>
+        </div>
+    </a>
+<script>
+    function rotateMe() {
+        document.getElementById("demo").classList.add("rotate");
+    }
+</script>
+</body>
+</html>
